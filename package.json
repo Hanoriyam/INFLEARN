@@ -1,6 +1,6 @@
 {
   "build": {
-    "copyright": "Doctorsoft Co., Ltd.",
+    "copyright": "HANORIYAM",
     "win": {
       "target": "default",
       "icon": "src/asset/icon/icon.ico"

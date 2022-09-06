@@ -101,7 +101,7 @@ const SetTrayIcon = () => {
     g_tray.setToolTip(g_strTitle);
     let contextMenu = Menu.buildFromTemplate([
         {
-            label: 'Start',
+            label: 'START',
             type: 'normal',
             click: () => {
                 if (g_nextButtonInterval === null) {
@@ -120,7 +120,7 @@ const SetTrayIcon = () => {
             }
         },
         {
-            label: 'Stop',
+            label: 'STOP',
             type: 'normal',
             click: () => {
                 if (g_nextButtonInterval) {
