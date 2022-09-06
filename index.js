@@ -12,6 +12,11 @@ nativeTheme.themeSource = 'dark';
 crashReporter.start({ uploadToServer: false });
 app.setAppUserModelId(g_strTitle);
 
+app.setLoginItemSettings({
+    openAtLogin: true,
+    openAsHidden: true
+});
+
 const createWindow = () => {
     g_mainWindow = new BrowserWindow({
         webPreferences: {
@@ -22,7 +27,8 @@ const createWindow = () => {
         autoHideMenuBar: true,
         center: true,
         width: 1366,
-        height: 768
+        height: 768,
+        show: false
     });
     g_mainWindow.on('page-title-updated', (e) => { e.preventDefault(); });
     g_mainWindow.on('close', (e) => {
